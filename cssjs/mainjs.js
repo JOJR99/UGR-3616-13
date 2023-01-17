@@ -17,17 +17,12 @@ function slider() {
 };
 
 
-
-
-
 function ValidateEmail(input) {
 
   var regex = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
   
   if (input.value.match(regex)) {
   
-
-
     document.formc.email.focus();
     return true;
   
@@ -42,9 +37,6 @@ function ValidateEmail(input) {
   }
   
   }
-
-
-
 
 
 var current = document.getElementById('home');       
@@ -188,10 +180,28 @@ function change3(){
   document.getElementById('solar').innerHTML = localStorage.getItem('pack3solar')
   
 }
+  function validatePhone(input) {
+    var result = /^(\d{3})[- ]?(\d{3})[- ]?(\d{4})$/
 
+    return result.test(input)
+  }
 
+  function validateNumber(input) {
+    var number = input.value
+    if (!validatePhone(number)) {
+alert("Incorrect phone-number format. Try again");
 
+      document.creditForm.number.focus();
+      const message = document.getElementById('re')
+      message.innerHTML = 'Enter correct phone format'
+   return false;
+    } else {
 
+      document.creditForm.number.focus();
+      return true;
+    }
+    
+  }
 
 
 function clicked(){
@@ -208,50 +218,19 @@ function clicked(){
 }
 if (localStorage.getItem('pack3') != null) {
   change3();
-  return;
-
-  
-}
+  return;}
 
 }
 
-
-
-
-
-
-  function validatePhone(input) {
-    var re = /^(\d{3})[- ]?(\d{3})[- ]?(\d{4})$/
-
-    return re.test(input)
-  }
-
-  function validateNumber(input) {
-    var number = input.value
-    if (!validatePhone(number)) {
-
-      document.creditForm.number.focus();
-      const message = document.getElementById('re')
-      message.innerHTML = 'Enter correct phone format'
-   
-    } else {
-
-      document.creditForm.number.focus();
-      return true;
-    }
-    
-  }
 
   function validateNumber2(input) {
     var number = input.value
     if (!validatePhone(number)) {
-
-
-
+alert("Incorrect phone-number format. Try again");
       document.creditForm.number.focus();
       const message = document.getElementById('res')
       message.innerHTML = 'Enter correct phone format'
-   
+   return false;
     } else {
 
       document.creditForm.number.focus();
