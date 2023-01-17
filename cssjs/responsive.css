@@ -1,0 +1,460 @@
+
+
+
+/*RESPONSIVENESS */
+
+  @media screen and (max-width:2100px) {
+    .body{
+        width: 60%;
+        margin: auto;
+        align-content: center;
+        align-items: center;
+      
+      }
+
+      .footerGrid{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+        box-sizing: border-box;
+        padding: 20px;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .hidegrid2{
+        display: none;
+    }
+    
+}
+
+
+
+@media screen and (max-width:1300px) {
+
+    .body{
+        width: 75%;
+        margin: auto;
+        align-content: center;
+        align-items: center;
+       }
+
+      .gridHome{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.5fr 0.3fr;
+        box-sizing: border-box;
+        padding: 10px;
+        gap: 10px;
+        display: inline-block;
+        justify-items: start;
+    }
+    h2{
+        font-size: 4vw;
+    }
+    
+
+    .gridHome--margin{
+        margin-bottom: 10px;
+
+    }
+
+    .gridHome__inGrid {
+
+        display: grid;
+        gap: 10px;
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.2fr 0.5fr;  
+        display: inline-block;
+        justify-items: start;
+        
+      }
+
+   
+  
+
+    .designGrid{
+
+        display: grid;
+        box-sizing: border-box;
+        gap: 10px;
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.3fr 1fr;
+        align-items: stretch;
+        justify-content: start;
+        
+        }
+
+        .designGrid__span{
+           grid-column-start: 1;
+           grid-column-end: 1;
+           grid-row-start: 1;
+           grid-row-end:2;
+        }
+        .designGrid__span1{
+           grid-column-start: 1;
+           grid-column-end: 1;
+           grid-row-start: 2;
+           grid-row-end: 3;
+        }
+       
+        
+        .desinGrid__inGrid{
+            display: grid;
+            justify-content: stretch;
+            display: inline-block;
+            align-items: stretch;
+            gap: 1px;
+            padding: 1px;
+            grid-template-columns: 1fr;
+            grid-template-rows: 0.4fr 0.7fr 0.5fr;
+           
+        }
+        
+        .projectGrid{
+
+            display: grid;
+                border: solid 1px rgba(0, 0, 0, 0.085);
+                grid-template-columns: 1fr;
+                grid-template-rows:0.8fr 0.6fr 0.1fr ;
+                gap: 10px;
+                box-sizing: border-box;
+                padding: 5px;
+            }
+
+
+        .projectGrid__inGrid2{
+
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: 0.5fr 0.8fr;
+            gap: 10px;
+        }
+        .projectGrid__inside{
+            display: grid;
+            grid-template-columns: 0.7fr 1fr;
+            box-sizing: border-box;
+            margin: auto;
+        }
+
+        .magnifyImg__ele1{
+            box-sizing: border-box;
+            padding: 10px;
+            max-width: 400px;
+            max-height: 400px;
+            justify-self: center;
+            align-self: center;
+        }
+        
+        .magnifyImg__ele1:hover{
+            transform: scale(1.5);
+            transition: ease-in;
+            padding-left: 20px;
+            
+            
+            }
+
+            .footerGrid{
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                grid-template-rows: 1fr;
+                box-sizing: border-box;
+                padding: 20px;
+                align-items: center;
+                justify-content: center;
+            }
+        
+            .hidegrid2{
+                display: none;
+            }
+      
+
+
+
+    
+}
+
+@media screen and (max-width:1000px) {
+
+    .body{
+            width: 80%;
+            margin: auto;
+            align-content: center;
+            align-items: center;
+          
+          }
+    
+    .cardGrid{
+   
+     display: grid;
+     grid-template-columns: repeat(2, 1fr);
+     grid-template-rows: repeat(2,1fr);
+     grid-template-areas: 
+     'a a'
+     'b b'
+     ;
+     gap: 10px;
+     box-sizing: content-box;
+     margin: auto;
+     justify-self: center;
+     align-items: center;
+     justify-content: center;
+ 
+ }
+
+ .cardGrid--span{
+     margin-top: 20px;
+     grid-column:span 2;
+     margin: auto;
+ }
+ .paymentGrid{
+
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    box-sizing: border-box;
+    align-items: center;
+    margin: 0px;
+    padding: 0px;
+
+
+}
+    .paymentGrid__inGrid{
+   
+     display: grid;
+     grid-template-columns: repeat(2, 1fr);
+     grid-template-rows: repeat(2,1fr);
+     grid-template-areas: 
+     'a a'
+     'b b'
+     ;
+     gap: 10px;
+     box-sizing: content-box;
+     margin: auto;
+     justify-self: center;
+     align-items: center;
+     justify-content: center;
+ 
+ }
+
+ .paymentGrid--span{
+     margin-top: 20px;
+     grid-column:span 2;
+     margin: auto;
+ }
+
+ .aboutGrid{
+
+
+    display: grid;
+    gap: 15px;
+    box-sizing: border-box;
+    border-radius: 20px;
+    background-color: white;
+    grid-template-areas: 
+    
+    'b'
+    'c'
+    'm'
+    't'
+    's'
+
+    ;
+}
+
+    .footerGrid{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        box-sizing: border-box;
+        padding: 20px;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .hidegrid{
+        display: none;
+    }
+ 
+}
+
+@media screen and (max-width:970px) {
+   
+
+      
+    .designGrid{
+
+        display: grid;
+        box-sizing: border-box;
+        gap: 10px;
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.2fr 0.9fr;
+        align-items: stretch;
+        justify-content: start;
+        
+        }
+
+        .designGrid__span{
+           grid-column-start: 1;
+           grid-column-end: 1;
+           grid-row-start: 1;
+           grid-row-end:2;
+        }
+        .designGrid__span1{
+           grid-column-start: 1;
+           grid-column-end: 1;
+           grid-row-start: 2;
+           grid-row-end: 3;
+        }
+        .paymentGrid__inGrid{
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(2,1fr);
+            grid-template-areas: 
+            'a a'
+            'b b'
+            ;
+            gap: 10px;
+            width: 100%;
+            margin: auto;
+            
+           
+        }
+      
+        
+        .paymentGrid--span{
+            grid-column: span 2;
+            margin: auto;
+        }
+        }
+
+@media screen and (max-width:900px) {
+
+    .body{
+        width: 90%;
+        margin: auto;
+        align-content: center;
+        align-items: center;
+
+       }
+
+
+
+    .infoGrid {
+
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        gap: 10px;
+    }
+
+
+
+}
+/*-----*/
+
+@media screen and (max-width:700px) {
+       
+   
+
+    .cardGrid{
+      
+        display: grid;
+        grid-template-columns:1fr;
+        grid-template-rows: repeat(3,1fr);
+        grid-template-areas:
+        'a'
+        'b'
+        'c';
+        gap: 10px;
+        box-sizing: content-box;
+      align-items: center;
+       
+}
+
+.cardGrid--span{
+    margin-top: 10px;
+    grid-column: span 1;
+
+    
+
+}
+
+.designGrid{
+
+    display: grid;
+    box-sizing: border-box;
+    gap: 10px;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.1fr 0.8fr;
+    align-items: stretch;
+    justify-content: start;
+    
+    }
+
+    .designGrid__span{
+       grid-column-start: 1;
+       grid-column-end: 1;
+       grid-row-start: 1;
+       grid-row-end:2;
+    }
+    .designGrid__span1{
+       grid-column-start: 1;
+       grid-column-end: 1;
+       grid-row-start: 2;
+       grid-row-end: 3;
+    }
+
+
+.paymentGrid__inGrid{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3,1fr);
+    grid-template-areas: 
+    'a'
+    'b'
+    'c'
+    ;
+    gap: 10px;
+    width: 100%;
+    margin: auto;
+    
+   
+}
+
+
+.paymentGrid--span{
+    grid-column: span 1;
+    margin: auto;
+
+}
+
+.formGrid{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows:0.8fr 0.8fr;
+    gap: 20px;
+    box-sizing: border-box;
+    align-items: center;
+    padding: 20px;
+    margin: auto;
+}
+
+}
+@media screen and (max-width:600px) {
+
+   .body{
+    width: 100%;
+    margin: auto;
+    align-content: center;
+    align-items: center;
+   }
+
+      .h2Contact{
+
+        font-family: myFoot;
+        font-size: 24px;
+    }
+    
+    
+}

@@ -1,0 +1,240 @@
+
+<html>
+
+
+<head>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+  <link rel="stylesheet" href="cssjs/styles.css">
+  <link rel="stylesheet" href="cssjs/responsive.css">
+  <link rel="stylesheet" href="Payment.html">
+
+
+
+
+<style>
+
+
+@font-face {
+    font-family: myFoot;
+   src: url(fonts/MomcakeBold-WyonA.otf);
+   
+}
+
+@font-face {
+   font-family: myFont;
+   src: url(fonts/GlametrixLight-0zjo.otf);
+}
+
+
+
+
+
+
+
+</style>
+
+
+<script>
+
+
+
+
+</script>
+  
+</head>
+
+
+ 
+
+
+<body onload="load();">
+
+
+    
+
+<button style="display: none;" id="plead" onclick="clicked();"></button>
+
+
+
+
+<div class="gridHome--shadow contentpay">
+        
+            
+
+        <div >
+
+            <h2 id="plan"></h2>
+        </div>
+
+        <div>
+
+            <p>This plan comes with various aspects, some are :  </p>
+
+        </div>  
+
+        <div>
+
+            <ul class="payop">
+
+                <li id="year"></li>
+                <li id="int"></li>
+                <li id="main"></li>
+                <li id="solar"></li>
+                <li> Bank loan already setted up for you</li>
+
+
+                
+            </ul>
+
+
+        </div>
+
+        <div>
+
+            <p class="paypagree">
+                If you have made your final decision and <em><b>agreed to our term and policies</b></em> 
+                <b>choose</b> your most comforting way of paymnet for you from the options stated below and finilize your paymnet .
+            </p>
+
+        </div>
+
+                                
+
+
+        <div >
+        
+            <ul class="iframe">
+            
+                    <li><a style="display: none;" id="credit" class="current"  href="javascript:show0();" onclick="currentDiv(this);" ></a></li>
+                
+                    <li><a id="credit" href="javascript:show1();" onclick="currentDiv(this);" >CREDIT</a></li>
+            
+                    <li><a  href="javascript:show2();" onclick="currentDiv(this);">BANK</a></li>
+            
+            
+                    <li><a   href="javascript:show3();" onclick="currentDiv(this);">Direct contact</a></li>
+            
+            </ul>
+            
+        </div>
+
+    
+
+
+<div>
+    <div id="payc">
+                
+                <div>   
+                    
+                    <form name="creditForm" >      
+                        
+                        
+                        
+                        <h3>PHONE NUMBER</h3>
+                        <input type="text" id="cnum" name="number" required>
+
+                         <h3>CARD NUMBER</h3>
+
+                        <input type="text" id="cardnum" required>
+                        
+                        <h3>PIN CODE</h3>
+
+                        <input type="text" id="code" required>
+
+
+                </div>
+
+            <div class="paycbutton">
+                <button class="paybutt" type="submit"  onclick="validateNumber(document.creditForm.number)" 
+                >proceed with payment?</button>
+                
+                
+            </div> 
+            <div>
+                <p id="re" style="display: block;"></p>
+            </div>
+           
+        </form>
+
+
+
+    </div>
+
+                
+    <div id="paya" >
+        <div>    
+            <form name="accntForm">
+
+                <h3>ACCOUNT NUMBER</h3>
+
+                <input type="text" id="accnt" required>
+                
+                <h3>BANK BRANCH(CBE)</h3>
+
+                <input type="text" id="bank" required>
+
+                <h3>PHONE NUMBER</h3>
+                
+                <input type="text" id="anum" name="pnumber" required>
+            
+            </div>
+            
+            <div class="paycbutton">
+                <button class="paybutt"  type="submit" onclick="validateNumber2(document.accntForm.pnumber)"
+                >proceed with payment?</button>
+            </div> 
+
+            <div>
+                <p id="res" style="display: block;"></p>
+            </div>
+        </form>
+    </div>
+
+
+    <div id="payh">
+        
+                <h3>
+                
+                CONTACT US FOR MORE
+                </h3>
+                
+        <pre >
+
+        5 KILLO - AAiT
+        ADDIS ABABA, ETHIOPIA
+        +251 000 000 000
+
+        contact@kurucontainers.com</pre>
+
+
+    </div>
+
+</div>
+
+        
+
+
+    <div style="margin-top: 10px;">
+        <p> 
+            For more detailed explanation, question or doubts please contact us 
+            directly using our 24 hour direct line #888. we are at your service 24/7 with well organized customer service . Thank you 
+        </p>
+
+       
+
+ 
+   
+ 
+    <script src="cssjs/IframeWindowResizerCONTENT.js"></script>
+  
+    <script src="cssjs/mainjs.js"></script>
+  
+      </body>
+      
+      
+
+
+
+</html>
+
